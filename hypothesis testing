@@ -1,0 +1,95 @@
+# ==============================
+# PYTHON BASICS – ALL EXERCISES
+# ==============================
+
+# Exercise 1: Check Natural Number
+num = int(input("Enter a number: "))
+if num > 0:
+    print("Natural number")
+else:
+    print("Not a natural number")
+
+
+# Exercise 2: Even or Odd
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+
+# Exercise 3: Largest of Two Numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+if num1 > num2:
+    print("Largest number is:", num1)
+else:
+    print("Largest number is:", num2)
+
+
+# Exercise 4: Largest of Three Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+if a > b and a > c:
+    print("Largest number is:", a)
+elif b > c:
+    print("Largest number is:", b)
+else:
+    print("Largest number is:", c)
+
+
+# Exercise 5: Leap Year Check
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+
+# Exercise 6: Print Numbers from 1 to 10
+for i in range(1, 11):
+    print(i)
+
+
+# Exercise 7: Sum of First n Natural Numbers
+n = int(input("Enter a number: "))
+total = 0
+for i in range(1, n + 1):
+    total += i
+print("Sum:", total)
+
+
+# Exercise 8: Factorial of a Number
+num = int(input("Enter a number: "))
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+print("Factorial:", fact)
+
+
+# Exercise 9: Reverse a Number
+num = int(input("Enter a number: "))
+rev = 0
+temp = num
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+print("Reversed number:", rev)
+
+
+# Exercise 10: Palindrome Check
+if temp == rev:
+    print("Palindrome number")
+else:
+    print("Not a palindrome")
+
+
+# Exercise 11: Simple Calculator
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
+print("Division:", num1 / num2)
